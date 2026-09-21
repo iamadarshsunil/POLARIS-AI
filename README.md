@@ -136,7 +136,7 @@ Google AI serves as the core intelligence and reasoning backbone of POLARIS-AI a
 
 Verifiable artifacts, prompt traces, and API execution schemas demonstrating Google AI integration are included in the [`/proofs`](proofs/) folder:
 
-- **[`proofs/gemini-tactical-explainer-log.json`](proofs/gemini-tactical-explainer-log.json)**: Contains the exact system prompt, input vessel telemetry, generation parameters (`gemini-1.5-pro`, temperature 0.2, structured JSON output), computed RIO scores, and explainability debrief.
+
 - **[`proofs/README.md`](proofs/README.md)**: Architectural breakdown of Google AI Studio prompt engineering, Vertex AI trajectory pipelines, and Earth Engine satellite data workflows.
 
 ---
