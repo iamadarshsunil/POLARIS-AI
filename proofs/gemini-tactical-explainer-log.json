@@ -1,0 +1,54 @@
+{
+  "project": "POLARIS-AI",
+  "organization": "Tech Visionaries Alliance (TVA)",
+  "google_ai_service": "Google Gemini 1.5 Pro (via Google AI Studio / Vertex AI Gemini API)",
+  "task": "Multimodal Maritime Risk Assessment & Explainable Tactical Route Re-planning",
+  "vessel_profile": {
+    "name": "ORV Sagar Nidhi",
+    "vessel_type": "Ocean Research Vessel",
+    "polar_category": "Category B",
+    "ice_class": "1A Super",
+    "installed_power_mw": 12.14,
+    "current_coordinates": {
+      "latitude": -69.38,
+      "longitude": 76.19,
+      "region": "Prydz Bay / Larsemann Hills, Antarctica"
+    }
+  },
+  "request_payload": {
+    "model": "gemini-1.5-pro",
+    "generation_config": {
+      "temperature": 0.2,
+      "top_p": 0.95,
+      "response_mime_type": "application/json"
+    },
+    "system_instruction": "You are POLARIS-AI, an expert maritime decision support copilot complying strictly with IMO Polar Code (POLARIS - Polar Operational Limit Assessment Risk Indexing System). You adhere to the operational axiom: 'AI recommends; the captain decides.' Evaluate ice regimes, calculate RIO scores, detect hazard trajectory intersections, and generate crystal-clear, transparent explainability logs for the shipmaster.",
+    "user_prompt": "Evaluate waypoint WP-02 (-70.05, 74.20) with newly detected drifting tabular iceberg (drift speed 1.2 kn, NE bearing) and first-year ice concentration 3/10. Compare Route A (baseline) against candidate Route B. Output operational status, RIO score, hazard clearance, and concise rationale for navigational command."
+  },
+  "response_payload": {
+    "evaluation_timestamp": "2026-09-21T10:05:00Z",
+    "waypoint_id": "WP-02",
+    "environmental_assessment": {
+      "ice_type": "Thick first-year ice",
+      "ice_concentration_tenths": "3/10",
+      "nominal_thickness_m": 0.66,
+      "rio_score": 2,
+      "rio_status": "HIGH RISK (CAUTION THRESHOLD BREACHED)"
+    },
+    "decision_recommendation": {
+      "action": "REPLAN TO ROUTE B",
+      "recommended_route": "Route B",
+      "current_route_status": "HIGH RISK",
+      "hazard_clearance_route_a_km": 2.6,
+      "hazard_clearance_route_b_km": 11.0,
+      "safety_clearance_delta_km": "+8.4 km",
+      "trajectory_confidence": "82%",
+      "uncertainty_radius_km": 2.1,
+      "eta_impact_hours": "+1.8 h",
+      "fuel_delta_percent": "+3.2%",
+      "attained_cii": 3.88,
+      "cii_compliance": true
+    },
+    "explainable_ai_brief": "Predicted iceberg trajectory and its associated 2.1 km uncertainty corridor now approach Route A within the projected 12-hour arrival window. Remaining on Route A reduces safety clearance to a dangerous 2.6 km under 3/10 ice cover. Recommending Route B expands hazard clearance to 11.0 km while maintaining IMO CII environmental compliance (+3.2% fuel, +1.8 h ETA). Final decision rests with the Master."
+  }
+}
