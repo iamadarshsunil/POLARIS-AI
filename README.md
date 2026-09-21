@@ -175,7 +175,7 @@ Target market (Research vessels, polar logistics, maritime operators) and long-t
 
 Upload your demo video to Google Drive, ensure link sharing is set to *"Anyone with the link can view"*, and update the link below (maximum 3 minutes):
 
-**[Watch Demo Video](https://drive.google.com/file/d/YOUR_VIDEO_LINK/view?usp=sharing)**
+**[Watch Demo Video](https://drive.google.com/file/d/18PVmTnzY9_2CwtkTW1acS0Ti5VmqHDn1/view?usp=sharing)**
 
 ---
 
